@@ -1,0 +1,11 @@
+{
+  "name": "my-blog-based-on-flask",
+  "version": "1.0.0",
+  "description": "My personal blog",
+  "repository": "https://github.com/abolphazl/my-blog-based-on-flask.git",
+  "author": "abolphazl <gorgdis@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
