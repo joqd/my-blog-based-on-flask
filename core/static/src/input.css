@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: product-sans-regular;
+    src: url(../assets/product-sans-regular.ttf);
+}
+
+body {
+    font-family: 'product-sans-regular';
+}
+
+.product {
+    font-family: "product-sans-regular";
+}
+
+
+/* buttons */
+.btn:hover {
+    background-color: #2563eb;
+}
+
+.btn {
+    font-size: 18px;
+    margin: 1px;
+    background-color: #3b82f6;
+    color: #eff6ff;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+input {
+    background-color: #334155;
+    height: 40px;
+    border: none;
+    border-radius: 10px;;
+    padding: 5px 18px;
+}
+
+.wide {
+    width: 280px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    opacity: .9;
+    transition: .2s;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: .4;
+}

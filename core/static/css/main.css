@@ -517,21 +517,88 @@ video {
   position: static;
 }
 
-.bg-sky-900 {
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.contents {
+  display: contents;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.content-center {
+  align-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.bg-slate-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .text-center {
   text-align: center;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
@@ -543,7 +610,111 @@ video {
   font-weight: 700;
 }
 
-.text-sky-50 {
+.text-slate-50 {
   --tw-text-opacity: 1;
-  color: rgb(240 249 255 / var(--tw-text-opacity));
+  color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+@font-face {
+  font-family: product-sans-regular;
+
+  src: url(../assets/product-sans-regular.ttf);
+}
+
+body {
+  font-family: 'product-sans-regular';
+}
+
+.product {
+  font-family: "product-sans-regular";
+}
+
+/* buttons */
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+.btn {
+  font-size: 18px;
+  margin: 1px;
+  background-color: #3b82f6;
+  color: #eff6ff;
+  padding: 5px 18px;
+  border: none;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+input {
+  background-color: #334155;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 18px;
+}
+
+.wide {
+  width: 280px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  opacity: .9;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: .4;
+}
+
+@media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .sm\:col-span-10 {
+    grid-column: span 10 / span 10;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
 }

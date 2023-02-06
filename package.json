@@ -5,6 +5,9 @@
   "repository": "https://github.com/abolphazl/my-blog-based-on-flask.git",
   "author": "abolphazl <gorgdis@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "bash dev.sh"
+  },
   "dependencies": {
     "tailwindcss": "^3.2.4"
   }
