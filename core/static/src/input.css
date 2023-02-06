@@ -7,8 +7,17 @@
     src: url(../assets/product-sans-regular.ttf);
 }
 
+@font-face {
+    font-family: fs-kim;
+    src: url(../assets/fs-kim-text-regular.otf);
+}
+
+.fs-kim {
+    font-family: "fs-kim";
+}
+
 body {
-    font-family: 'product-sans-regular';
+    font-family: 'fs-kim';
 }
 
 .product {

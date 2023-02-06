@@ -2,5 +2,9 @@
 
 
 {% block contents %}
-    <div>Article list</div>
+    {% if g.user %}
+        <div>Hello {{g.user['username']}}</div>
+    {% else %}
+        <div>Hello User!</div>
+    {% endif %}
 {% endblock %}
