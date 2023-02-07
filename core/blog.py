@@ -125,5 +125,5 @@ def delete(id):
 
 @bp.route("/<int:id>/read", methods=("GET",))
 def read(id):
-    post = get_post(id)
+    post = get_post(id, check_author=False)
     return render_template("blog/read.html", post=post)
