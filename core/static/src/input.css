@@ -26,7 +26,7 @@ body {
 
 
 /* buttons */
-.btn:hover {
+/*.btn:hover {
     background-color: #2563eb;
 }
 
@@ -39,29 +39,24 @@ body {
     border: none;
     border-radius: 10px;
     transition: .2s;
-}
+}*/
 
-input {
-    background-color: #334155;
-    height: 40px;
-    border: none;
-    border-radius: 10px;;
-    padding: 5px 18px;
-}
 
 .wide {
     width: 280px;
 }
 
+
+
 textarea:focus, input:focus{
-    outline: none;
+    outline: none !important;
 }
 
-input::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
     opacity: .9;
     transition: .2s;
 }
 
-input:focus::-webkit-input-placeholder {
+textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
     opacity: .4;
 }

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+
+{% block contents %}
+	
+	<form method="post" class="grid grid-cols-12 w-full gap-y-2 product">
+		<input class="input input-bordered col-span-12 mx-1" placeholder="Title" type="text" name="title" required>
+		<textarea rows="8" class="textarea textarea-bordered col-span-12 mx-1 " placeholder="Body" name="body"></textarea required>
+		<!-- <input class="input input-bordered col-span-12 mx-1" placeholder="Tags: #node" type="text" name="tags"> -->
+		<input class="btn mx-1 col-span-12 capitalize btn-secondary btn-lg font-normal" type="submit" value="Publish">
+	</form>
+
+{% endblock %}

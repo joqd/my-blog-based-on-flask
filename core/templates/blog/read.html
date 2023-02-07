@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+
+{% block contents %}
+	<div class="text-left text-primary mt-5 text-2xl">{{ request.form['title'] or post['title'] }}</div>
+	<div class="text-justify text-lg mt-2">
+		{{ request.form['body'] or post['body'] }}
+	</div>
+{% endblock %}

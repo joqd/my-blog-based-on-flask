@@ -1,11 +1,11 @@
-<!doctype html>
 <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<div class="grid content-center text-center min-h-screen text-slate-50 bg-slate-800">
+
+<div data-theme="coffee" class="grid content-center text-center min-h-screen product">
     <form class="grid gap-y-2" method="post">
-        <div><input name="username" class="wide" placeholder="Username" id="username" type="text" required></div>
-        <div><input name="password" class="wide" placeholder="Password" id="password" type="password" required></div>
-        <div><input class="btn wide cursor-pointer" type="submit" value="Login"></div>
+        <div><input name="username" class="input input-bordered wide" placeholder="Username" id="username" type="text" required></div>
+        <div><input name="password" class="input input-bordered wide" placeholder="Password" id="password" type="password" required></div>
+        <div><input class="btn btn-primary wide" type="submit" value="Login"></div>
     </form>
 </div>

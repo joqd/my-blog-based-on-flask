@@ -31,9 +31,10 @@ def create_app(test_config=None):
     db.init_app(app)
 
     # apply the blueprints to the app
-    from core import auth, blog, me
+    from core import auth, blog, me, status
     app.register_blueprint(auth.bp)
     app.register_blueprint(blog.bp)
+    app.register_blueprint(status.bp)
     app.register_blueprint(me.bp)
 
     # make url_for('index') == url_for('blog.index')

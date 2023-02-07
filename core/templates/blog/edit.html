@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block contents %}
+
+	<form method="post" class="grid grid-cols-12 w-full gap-y-2 product">
+		<input class="input input-bordered col-span-12 mx-1" value="{{ request.form['title'] or post['title'] }}" type="text" name="title" required>
+		<textarea rows="8" class="textarea textarea-bordered col-span-12 mx-1" placeholder="Body" name="body" required> {{ request.form['body'] or post['body'] }}</textarea>
+		<input class="btn mx-1 col-span-12 capitalize btn-secondary btn-lg font-normal" type="submit" value="Save">
+	</form>
+
+	<div class="divider"></div>
+
+	<form class="grid w-full product" action="{{ url_for('blog.delete', id=post['id']) }}" method="post">
+		<input class="no-animation btn mx-1 capitalize btn-error btn-lg font-normal" type="submit" value="Delete" onclick="return confirm('Are you sure?');">
+	</form>
+{% endblock %}
